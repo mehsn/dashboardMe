@@ -1,0 +1,8 @@
+main{
+    width: 80vw;
+    -webkit-transition: width 200ms;
+    -moz-transition: width 200ms;
+    -ms-transition: width 200ms;
+    -o-transition: width 200ms;
+    transition: width 200ms;
+}

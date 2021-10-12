@@ -1,0 +1,16 @@
+.hqSidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 20vw;
+    height: 101vh;
+    z-index: 220;
+    -webkit-transition: width 200ms;
+    -moz-transition: width 200ms;
+    -ms-transition: width 200ms;
+    -o-transition: width 200ms;
+    transition: width 200ms;
+}
+
+
+/*mediumspringgreen*/
