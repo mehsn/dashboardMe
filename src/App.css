@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* dev -- */
+
+:root {
+  --design-color: red;
+  --bg-color: #282c34;
+  --text-color: white;
+}
+.bgColor{
+  background-color:#282c34;
+}
+.textColor{
+  background-color:white;
+}
+.designTextColor{
+  color:red;
+}
+.designShadowColor{
+  text-shadow: 0 0 1px red;
+}
+
+.designBgColor{
+  background-color:red;
+}
+
