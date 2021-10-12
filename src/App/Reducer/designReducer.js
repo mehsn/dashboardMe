@@ -79,7 +79,7 @@ export default function designReducer(state = defaultStore, action) {
         default:
             return state;
     }
-    return state;
+
 
 }
 const changeDesign = "changeDesign";
