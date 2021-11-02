@@ -11,7 +11,7 @@ export const defaultStore = {
         textBaseColor: "#f3ecec",
     },
     componentDisplay: {
-        sidebarDisplay:true,
+        sidebarDisplay:"maximize",
     }
 }
 

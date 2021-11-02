@@ -40,8 +40,7 @@ export default function componentDisplayReducer(state = defaultStore, action) {
 
         default:
             return state;
-    }
-    return state;
+    } 
 
 }
 const ChangeSidebarDisplay = "changeSidebarDisplay";

@@ -9,15 +9,16 @@ import {connect} from "react-redux";
 
  function Master(props) {
     function mainWidth(){
+        console.log(props.sidebarState + "-----")
         switch (props.sidebarState){
             case "false":
-                return "100vw"
+                return "100%"
             case "minimize":
-                return "95vw"
+                return "95%"
             case "maximize":
-                return "80vw"
+                return "80%"
             default:
-                return "100vw"
+                return "100%"
 
         }
     }
