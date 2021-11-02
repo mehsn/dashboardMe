@@ -54,7 +54,7 @@ function Sidebar(props) {
     return (
         <div>
             <div className={"hqSidebar " + (props.sidebarState ? 'd-block' : "d-none")}
-                 style={{backgroundColor: props.designState.bgColor,
+                 style={{backgroundColor: props.designState.bgColor,color:props.designState.color,
                  width: sidebarWidth()
                  }}>
                 <div className="" onClick={() => {
