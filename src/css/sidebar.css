@@ -12,5 +12,9 @@
     transition: width 200ms;
 }
 
+ .sidebarItem{
+    transition: all ease 1s !important;
+}
+
 
 /*mediumspringgreen*/

@@ -7,6 +7,7 @@
   pointer-events: none;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -63,6 +64,10 @@
 }
 
 html {
-  scrollbar-width: thin;          /* "auto" or "thin" */
-  scrollbar-color:var(--design-color) var(--bg-color) ;   /* scroll thumb and track */
+  scrollbar-width: thin;
+  scrollbar-color:var(--design-color) var(--bg-color) ;
+}
+html *{
+  font-family: "Sofia", sans-serif;
+
 }

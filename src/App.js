@@ -18,7 +18,7 @@ function App(props) {
     return (
         <div className="App">
             <BaseCss/>
-            <div className="hsd bgColor " > sdf </div>
+            {/*<div className="hsd bgColor " > sdf </div>*/}
             <Routes>
 
             </Routes>

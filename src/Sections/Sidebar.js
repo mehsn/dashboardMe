@@ -6,7 +6,7 @@ import {
     lightDesignAction,
     randomDesignAction
 } from "../App/Reducer/designReducer";
-import {FaAccessibleIcon, IoClose} from "react-icons/all";
+import {AiFillHome, BiUpArrow, FaAccessibleIcon, IoClose} from "react-icons/all";
 import {useState} from "react";
 import {
     changeSidebarDisplayAction,
@@ -14,13 +14,14 @@ import {
     minimizeSidebarDisplayAction
 } from "../App/Reducer/componentDisplayReducer";
 import {Button} from "@mui/material";
+import SidebarResponsiveButton from "../Components/SidebarResponsiveButton";
 
 function Sidebar(props) {
     const [sidebarDisplay, setSidebarDisplay] = useState("true");
     console.log(props.sidebarState)
 
-    function sidebarWidth(){
-        switch (props.sidebarState){
+    function sidebarWidth() {
+        switch (props.sidebarState) {
             case "false":
                 return 0
             case "minimize":
@@ -32,18 +33,19 @@ function Sidebar(props) {
 
         }
     }
-    function sidebarArrowBtn(){
-        switch (props.sidebarState){
+
+    function sidebarArrowBtn() {
+        switch (props.sidebarState) {
 
             case "minimize":
                 return (
-                    <Button onClick={()=>{
+                    <Button onClick={() => {
                         props.maximizeSidebarDisplayAction();
                     }}> « </Button>
                 )
             default:
                 return (
-                    <Button onClick={()=>{
+                    <Button onClick={() => {
                         props.minimizeSidebarDisplayAction();
                     }}> » </Button>
                 )
@@ -51,22 +53,27 @@ function Sidebar(props) {
         }
     }
 
+
     return (
         <div>
             <div className={"hqSidebar " + (props.sidebarState ? 'd-block' : "d-none")}
-                 style={{backgroundColor: props.designState.bgColor,color:props.designState.color,
-                 width: sidebarWidth()
+                 style={{
+                     backgroundColor: props.designState.bgColor, color: props.designState.textBaseColor,
+                     width: sidebarWidth()
                  }}>
                 <div className="" onClick={() => {
                     props.changeSidebarDisplayAction();
                 }}>
                     <IoClose/>
                 </div>
-                <div><FaAccessibleIcon/> item 1</div>
-                <div> item 2</div>
-                <div> item 3</div>
-                <div> item 4</div>
-                {sidebarArrowBtn()}
+                <br/>
+                <div className={"p-3 " + (props.sidebarState === "minimize" ? 'text-center' : "text-right")}>
+                    <SidebarResponsiveButton className="sidebarItem" icon={<AiFillHome/>}> صفحه اصلی </SidebarResponsiveButton>
+                    <SidebarResponsiveButton icon={<BiUpArrow/>}>item 2</SidebarResponsiveButton>
+                    <SidebarResponsiveButton icon={<BiUpArrow/>}>item 3</SidebarResponsiveButton>
+                    <SidebarResponsiveButton icon={<BiUpArrow/>}>test</SidebarResponsiveButton>
+                    {sidebarArrowBtn()}
+                </div>
             </div>
         </div>
 
