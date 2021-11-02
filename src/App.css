@@ -62,3 +62,7 @@
   background-color:red;
 }
 
+html {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color:var(--design-color) var(--bg-color) ;   /* scroll thumb and track */
+}
