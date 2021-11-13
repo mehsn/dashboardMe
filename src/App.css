@@ -63,11 +63,20 @@
   background-color:red;
 }
 
-html {
-  scrollbar-width: thin;
-  scrollbar-color:var(--design-color) var(--bg-color) ;
-}
-html *{
-  font-family: "Sofia", sans-serif;
 
+html *{
+  font-family: "B Homa", sans-serif;
+  font-size: 1rem;
+
+}
+html{
+  background-color: var(--design-color);
+}
+
+.masterLayouts {
+  direction: ltr !important;
+
+}
+.ltr {
+  direction: ltr !important;
 }

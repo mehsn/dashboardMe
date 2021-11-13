@@ -9,7 +9,6 @@ import {connect} from "react-redux";
 
  function Master(props) {
     function mainWidth(){
-        console.log(props.sidebarState + "-----")
         switch (props.sidebarState){
             case "false":
                 return "100%"
@@ -23,11 +22,13 @@ import {connect} from "react-redux";
         }
     }
     return (
-        <div className="" >
+        <div className="masterLayouts" >
             <Sidebar/>
-            <main style={{backgroundColor:props.bgColor,width:mainWidth()   }} >
+            <main className="p-2"  style={{width:mainWidth()   }} >
                 <Header/>
+                <div className="pt-4" style={{minHeight:"70vh"}} >
                 {props.children}
+                </div>
             </main>
 
         </div>

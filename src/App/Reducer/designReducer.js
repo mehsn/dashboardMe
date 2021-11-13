@@ -1,4 +1,4 @@
-import {CSS_COLOR_NAMES_object as cssColor} from "../colors";
+import {CSS_COLOR_NAMES as cssColor,CSS_COLOR_NAMES as colorN} from "../colors";
 
 
 export const defaultStore = {
@@ -6,9 +6,11 @@ export const defaultStore = {
     user: false,
     cart: {},
     design: {
-        designColor: "#49ff03",
-        bgColor: "#282c34",
-        textBaseColor: "#f3ecec",
+        designColor: "Green",
+        SidebarBgColor: "Salmon",
+        bgColor: "Cyan",
+        baseBgColor: "Gray",
+        textBaseColor: "Black",
     },
     componentDisplay: {
         sidebarDisplay:"maximize",
@@ -22,11 +24,11 @@ export default function designReducer(state = defaultStore, action) {
             console.log("yeah")
             state = {
                 ...state,
-                design: {
+
                     designColor: action.payload.designColor,
                     bgColor: action.payload.bgColor,
                     textBaseColor: action.payload.textBaseColor,
-                }
+
             }
             console.log(state);
             return state;
@@ -35,14 +37,15 @@ export default function designReducer(state = defaultStore, action) {
         case "randomDesign" :
             console.log("yeah")
 
-            let keys = Object.keys(cssColor);
-            let designColor = cssColor[keys[keys.length * Math.random() << 0]];
-            let bgColor = cssColor[keys[keys.length * Math.random() << 0]];
-            let textBaseColor = cssColor[keys[keys.length * Math.random() << 0]];
+            let keys = Object.keys(colorN);
+            let designColor = colorN[keys[keys.length * Math.random() << 0]];
+            let bgColor = colorN[keys[keys.length * Math.random() << 0]];
+            let textBaseColor = colorN[keys[keys.length * Math.random() << 0]];
 
             state = {
                 ...state,
                 design: {
+                    baseBgColor: state.design.baseBgColor,
                     designColor: designColor,
                     bgColor: bgColor,
                     textBaseColor: textBaseColor,
@@ -67,8 +70,8 @@ export default function designReducer(state = defaultStore, action) {
             state = {
                 ...state,
                 design: {
-                    designColor: cssColor.aqua,
-                    bgColor: cssColor.chocolate,
+                    designColor: cssColor.snow,
+                    bgColor: cssColor.black,
                     textBaseColor: cssColor.whitesmoke,
                 }
             }

@@ -55,28 +55,26 @@ function Sidebar(props) {
 
 
     return (
-        <div>
-            <div className={"hqSidebar " + (props.sidebarState ? 'd-block' : "d-none")}
-                 style={{
-                     backgroundColor: props.designState.bgColor, color: props.designState.textBaseColor,
-                     width: sidebarWidth()
-                 }}>
-                <div className="" onClick={() => {
-                    props.changeSidebarDisplayAction();
-                }}>
-                    <IoClose/>
-                </div>
-                <br/>
-                <div className={"p-3 " + (props.sidebarState === "minimize" ? 'text-center' : "text-right")}>
-                    <SidebarResponsiveButton className="sidebarItem" icon={<AiFillHome/>}> صفحه اصلی </SidebarResponsiveButton>
-                    <SidebarResponsiveButton icon={<BiUpArrow/>}>item 2</SidebarResponsiveButton>
-                    <SidebarResponsiveButton icon={<BiUpArrow/>}>item 3</SidebarResponsiveButton>
-                    <SidebarResponsiveButton icon={<BiUpArrow/>}>test</SidebarResponsiveButton>
-                    {sidebarArrowBtn()}
-                </div>
+        <div className={"hqSidebar " + (props.sidebarState ? 'd-block' : "d-none")}
+             style={{
+                 backgroundColor: props.designState.bgColor, color: props.designState.textBaseColor,
+                 width: sidebarWidth()
+             }}>
+            <div className="" onClick={() => {
+                props.changeSidebarDisplayAction();
+            }}>
+                <IoClose/>
+            </div>
+            <br/>
+            <div className={"p-3 " + (props.sidebarState === "minimize" ? 'text-center' : "text-right")}>
+                <SidebarResponsiveButton className="sidebarItem" icon={<AiFillHome/>}> صفحه
+                    اصلی </SidebarResponsiveButton>
+                <SidebarResponsiveButton icon={<BiUpArrow/>}>item 2</SidebarResponsiveButton>
+                <SidebarResponsiveButton icon={<BiUpArrow/>}>item 3</SidebarResponsiveButton>
+                <SidebarResponsiveButton icon={<BiUpArrow/>}>test</SidebarResponsiveButton>
+                {sidebarArrowBtn()}
             </div>
         </div>
-
     );
 }
 
