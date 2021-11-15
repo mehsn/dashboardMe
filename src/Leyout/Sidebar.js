@@ -138,6 +138,10 @@ function Sidebar(props) {
                     <SidebarResponsiveButton className="sidebarItem  "
                                              icon={<AiOutlineRadarChart/>}>نمودارها</SidebarResponsiveButton>
                 </Link>
+                <Link to="charts">
+                    <SidebarResponsiveButton className="sidebarItem  "
+                                             icon={<AiOutlineRadarChart/>}>نمودارها</SidebarResponsiveButton>
+                </Link>
 
             </div>
         </div>
