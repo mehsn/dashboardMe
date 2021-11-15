@@ -1,12 +1,12 @@
 import Routes from "./Routes";
 import {connect, Provider} from "react-redux";
 import './App.css';
-import './css/react_animate_css.css';
-import './css/cssColorNameClasses.min.css';
-import './css/bootstrap.min.css';
+import './assets/css/react_animate_css.css';
+import './assets/css/cssColorNameClasses.min.css';
+import './assets/css/bootstrap461/bootstrap.min.css';
 import {changeDesignAction, lightDesignAction, darkDesignAction, randomDesignAction} from "./App/Reducer/designReducer"
-import BaseCss from "./Components/BaseCss";
-import {CSS_COLOR_NAMES} from "./App/colors";
+import BaseCss from "./Component/BaseCss";
+
 
 
 function App(props) {

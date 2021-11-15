@@ -5,7 +5,7 @@ export default function componentDisplayReducer(state = defaultStore, action) {
     switch (action.type) {
         case "changeSidebarDisplay" :
             let value;
-            state.componentDisplay.sidebarDisplay ? value=false : value="minimize";
+            state.componentDisplay.sidebarDisplay ? value=false : value="maximize";
             state = {
                 ...state,
                 componentDisplay: {

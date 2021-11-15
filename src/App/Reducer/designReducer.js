@@ -8,7 +8,7 @@ export const defaultStore = {
     design: {
         designColor: "Green",
         SidebarBgColor: "Salmon",
-        bgColor: "Cyan",
+        bgColor: "white",
         baseBgColor: "Gray",
         textBaseColor: "Black",
     },

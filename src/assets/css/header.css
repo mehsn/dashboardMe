@@ -1,0 +1,50 @@
+/*.hqHeader{*/
+/*    background-color: skyblue;*/
+/*    width: 100vw;*/
+/*    height: 12vh;*/
+/*    position: fixed;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-direction: row;*/
+/*}*/
+
+.hqSidebarBtn {
+    cursor: pointer;
+    animation: ease-in fe21 300ms;
+}
+
+/* --------- Search box --------  */
+.mainHeader  *:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+ }
+.mainHeader  * {
+    font-size: 1rem;
+ }
+.mainHeader .searchBox{
+    border-bottom: 0 solid green;
+}
+.mainHeader .searchBox .searchInput {
+    background: none;
+    color: green;
+    border: 0;
+}
+
+.mainHeader .searchBox .searchBtn {
+
+}
+
+
+
+@keyframes fe21 {
+
+    0% {
+        opacity: 0;
+        transform: rotate(30deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}

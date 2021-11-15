@@ -1,0 +1,36 @@
+.hqSidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10vw;
+    height: 101vh;
+    z-index: 220;
+    -webkit-transition: width 200ms;
+    -moz-transition: width 200ms;
+    -ms-transition: width 200ms;
+    -o-transition: width 200ms;
+    transition: width 200ms;
+    box-shadow: 11px -19px 16px black;
+
+}
+
+ .sidebarItem{
+    transition: all ease 1s !important;
+}
+.hqSidebar a{
+ color: inherit !important;
+}
+.sidebarMenu *{
+    font-size: 1.2rem;
+}
+.sidebarMenu a{
+    display: block;
+    padding: 4px 1px;
+    transition: 500ms;
+}
+.sidebarMenu a:hover{
+    background-color: rgba(227, 227, 227, 0.5);
+    border-radius: 10px;
+}
+
+/*mediumspringgreen*/

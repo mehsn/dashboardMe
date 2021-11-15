@@ -1,0 +1,10 @@
+.statisticWidgetRow {
+}
+
+.statisticWidgetRow .statisticWidget {
+    background-color: white;
+}
+
+.recharts-wrapper, .recharts-wrapper * {
+    direction: ltr !important;
+}
